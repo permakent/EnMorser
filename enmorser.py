@@ -98,7 +98,7 @@ class MorseKeyboard(tk.Tk):
                 button.grid(row=idx, column=idy, padx=5, pady=5)
 
 
-        receive_button = tk.Button(keyboard_frame, text="RECEIVE", width=9,
+        receive_button = tk.Button(keyboard_frame, text="RECEIVE", width=9, fg="#006600",
                              relief="raised")
         receive_button.grid(row=3, column=10, columnspan=4, padx=5, pady=5)
         receive_button.bind("<ButtonPress>", lambda e: self.button_pressed())  # Bind the press event
