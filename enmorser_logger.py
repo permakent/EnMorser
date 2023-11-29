@@ -26,6 +26,10 @@ y = (screen_height/2) - (height/2)
 root.geometry('%dx%d+%d+%d' % (width, height, x, y))
 root.resizable(0, 0)        # Load the image file from disk.
 
+#==================================METHODS============================================
+def on_close(self):
+    self.destroy()
+
 #icon = root.PhotoImage(file="em_icon1.png")
 # Set it as the window icon.
 #root.iconphoto(True, icon)
