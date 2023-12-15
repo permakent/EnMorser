@@ -125,13 +125,13 @@ class MorseKeyboard(tk.Tk):
         display_frame = tk.Frame(self)
         display_frame.grid(row=0, column=0, sticky="nsew")
         txt_callsign = tk.Label(display_frame, width=10, font=('arial', 10),
-                    text = "WA6ZFY", fg='#660000')
+                    text = "USERCALL", fg='#660000')
         txt_callsign.grid(row=0, column=0, padx=2, pady=2, sticky="w")
         txt_title = tk.Label(display_frame, width=30, font=('arial', 12),
                     text = "EnMorser Terminal", fg='#000066')
         txt_title.grid(row=0, column=1, padx=2, pady=2, sticky="w")
         txt_recvcall = tk.Label(display_frame, width=10, font=('arial', 10),
-                    text = "K7ABC", fg='#006600')
+                    text = "RECVCALL", fg='#006600')
         txt_recvcall.grid(row=0, column=2, padx=2, pady=2, sticky="w")
         
         display_label = tk.Label(display_frame, text="Message Area:")
